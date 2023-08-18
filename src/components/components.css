@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 변수 만들기 */
+:root{
+    --dark:#2b2d42;
+    --light:#adb5bd;
+    --border:#dee2d6;
+    --border-btn:#edf2f4;
+}
+ 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'S-CoreDream-3Light', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    font-family: 'S-CoreDream-3Light', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.container{
+    max-width:1024px;
+    margin:auto;
+}
+
+.nav-brand{
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.move{
+    margin-left: 28em;
+    text-align: center;
+}
+
+.text-dark{
+    color:var(--dark);
+}
+
+.inline{
+    display:inline-block;
+}
+
+.text-light{
+    color:var(--light);
+    margin: 0.5em;
+}
+
+#header nav{
+    background-color: #06d6a0;
+    padding:1em 0;
+    width:100%;
+    height: 80px;
+}
+
+#site-main{
+    margin-top:3em;
+}  
+
+ul {
+    overflow-x:hidden;
+    overflow-y:auto;
+    height: 400px;
+}
+
+.info {
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+table{
+    border-spacing: 0px;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 95%;
+}
+
+.table-width {
+    width:70%;
+}
+
+.table td{
+    font-size: 14px;
+    padding:.5em;
+    vertical-align: center;
+    text-align: center;
+    border-bottom:1px solid var(--border);
+    border-right:1px solid var(--border);
+}
+
+th{
+    background-color: #06d6a0;
+    padding:.75em;
+    vertical-align: center;
+    text-align: center;
+    border-top:1px solid var(--border);
+}
+
+.thead-dark {
+    color:#fff;
+    background-color: var(--dark);
+    border-color: #323232;
+}
+
+.border-left {
+    border-left:1px solid var(--border);
+}
+
+.new_user{
+    max-width:786px;
+    margin:auto;
+}
+
+.form-group {
+    margin:.4em 0;
+}
+
+.form-group input[type="text"] {
+    width:60%;
+    padding:.6em 1em;
+    margin: .5em 0;
+    border:1px solid var(--border);
+    font-size:1em;
+    border-radius:.2em;
+}
+
+.form-group input[type="number"] {
+    width:20%;
+    padding:.6em 1em;
+    margin: .5em;
+    border:1px solid var(--border);
+    font-size:1em;
+    border-radius:.2em;
+}
+
+.form-group .radio {
+    margin:1em 2em;
+}
+
+/* adding style to radio buttons */
+.radio input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+
+.radio input[type="radio"] + .radio-label:before{
+    content:"";
+    background:var(--border-btn);
+    border-radius: 100%;
+    border:1px solid var(--border);
+    display: inline-block;
+    width:1em;
+    height:1em;
+    position: relative;
+    top:-0em;
+    margin:0 .5em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+}
+
+.radio input[type="radio"]:checked + .radio-label:before{
+    background-color: #16db93;
+    box-shadow: inset 0 0 0 4px #e0ecef;
+}   
+
+.radio input[type="radio"]:focus + .radio-label:before{
+    outline: none;
+    border-color: #16db93;
+}
+
+.radio input[type="radio"]:disabled + .radio-label:before{
+    box-shadow: inset 0 0 0 4px #e9ecef;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+}
+
+.form-group .btn{
+    width:40%;
+    padding: .9em 1em;
+    background-color: #16db93;
+    border:none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor:pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+.form-group .btn:hover{
+    background-color: var(--dark);
+    color:var(--border);
+}
+
+.update-button{
+    padding: 0.4em;
+    background-color: var(--dark);
+    color: #fff;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 0.2em;
+    margin: 0.5em 0;
+}
+
+
+@media ( max-width: 768px ) {
+    .move{
+        margin-right: 3em;
+        margin-left: 0em;
+        text-align: right;
+    }
+    #header nav{
+        background-color: #06d6a0;
+        padding:1em 0;
+        width:100%;
+        height: 80px;
+    }
+
+    .info {
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    table{
+        border-spacing: 0px;
+        width: 90%;
+        margin-top: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9em;
+    }
+    
+    .form-group {
+        margin:.4em 0;
+    }
+    
+    .form-group input[type="number"] {
+        width:120px;
+        padding:0.5em;
+        margin: .5em;
+        border:1px solid var(--border);
+        font-size:0.9em;
+        border-radius:.2em;
+    }
+    
+    .form-group .radio {
+        margin:1em 1em;
+    }
+
+    .form-group .btn{
+        width:40%;
+        padding: .9em 1em;
+        background-color: #16db93;
+        border:none;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1em;
+        cursor:pointer;
+        border-radius: .2em;
+        margin: .5em 0;
+    }
+
+    ul {
+        overflow-x:hidden;
+        overflow-y:auto;
+        height: 400px;
+        width: 250px;
+        font-size: 0.8em !important;
+    }
+}
+
+
+.component {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;;
+}
+
+
+
+.component .contents {
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.component .contents .inputContainer {
+    width: 80%;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.seacrhbar {
+    width: 60%;
+    height: 40px;
+    padding: 0.6em 1em;
+    margin: 0.5em;
+    border: 1px solid var(--border);
+    font-size: 1em;
+    border-radius: 0.2em;
+}
+
+.searchResult {
+    background-color: rgb(248, 248, 248);
+    overflow-y: scroll;
+    width: 60%;
+    max-height: 350px;
+    padding: 0.6em 1em;
+    margin: auto;
+    border: 1px solid var(--border);
+    font-size: 1em;
+    border-radius: 0.2em;
+}
+
+.searchItem {
+    padding: 0.6em 1em;
+    background-color: white;
+    border-top: 0.2px solid var(--border);
+    border-bottom: 0.2px solid var(--border);
+    border-right: 0.4px solid var(--border);
+    border-left: 0.4px solid var(--border);
+}
