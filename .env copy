@@ -1,0 +1,2 @@
+ATLAS_URI=mongodb+srv://id:password@cluster0.d3rpr.mongodb.net/sampleDB?retryWrites=true&w=majority
+PORT=4000
